@@ -21,13 +21,13 @@ export class CoverComponent implements OnInit {
 //     };
 public rzp1: any;
 public options: any = {
-  key: 'rzp_test_zhCTNyTPMpJ9mF', // add razorpay key here
+  key: 'rzp_test_PElh6vLLCqxiCJ', // add razorpay key here
   name: 'The Coder',
   description: 'Donation',
   amount: 10000, // razorpay takes amount in paisa
   prefill: {
     name: 'The Coder',
-    email: '', // add your email id
+    email: 'ahamedkabeer525@gmail.com', // add your email id
   },
   notes: {},
   theme: {
@@ -40,7 +40,7 @@ public options: any = {
   ngOnInit(): void {
   }
 
-  public donate( ):void{
+  public donates( ):void{
 
     this.rzp1 = new this.winRef.nativeWindow.Razorpay(this.options);
     this.rzp1.open();
